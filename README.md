@@ -1,4 +1,4 @@
-# Portfolio-comp-tences-jean-claude
+# Portfolio-competences-jean-claude
 Site web présentant mes compétences – projet IUT
 ## Sujet et objectif
 Ce projet consiste à créer un site web qui présente mes compétences
