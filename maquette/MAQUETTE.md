@@ -1,81 +1,74 @@
 # Maquette du site – version 1
 
-## Plan du site
-Le site comporte 5 pages, accessibles depuis un menu commun en haut :
-1. Accueil
-2. Compétences
-3. Projets
-4. Parcours
-5. Contact
+## Choix d'organisation
+Site sur une seule page qui défile, avec un menu latéral fixe.
+Raison : le visiteur (recruteur) parcourt tout sans changer de page,
+et le menu montre à quel endroit il se trouve.
 
-## Éléments communs à toutes les pages
-- En-tête : nom + menu de navigation
-- Pied de page : liens GitHub, LinkedIn, CV en PDF
+## Vue d'ensemble
+```
++------+--------------------------------------------+
+|  JC  |                                            |
+|      |   SECTION 1 : PRÉSENTATION                 |
+|  ●   |   Gros titre : « Jean-Claude »             |
+|  ○   |   Une phrase qui me résume                 |
+|  ○   |   [Télécharger mon CV]                     |
+|  ○   |                                            |
+|      +--------------------------------------------+
+| MENU |   SECTION 2 : COMPÉTENCES                  |
+| FIXE |   (voir détail plus bas)                   |
+|      +--------------------------------------------+
+|      |   SECTION 3 : PROJETS ET PARCOURS          |
+|      |   (frise horizontale)                      |
+|      +--------------------------------------------+
+|      |   SECTION 4 : CONTACT                      |
++------+--------------------------------------------+
+● = section en cours, ○ = autres sections (cliquables)
+```
 
-## Page Accueil
-+--------------------------------------------------+
-| JEAN-CLAUDE   Accueil Compétences Projets Contact|
-+--------------------------------------------------+
-|  [Photo]   Bonjour, je suis Jean-Claude          |
-|            Étudiant en ... à l'IUT de ...        |
-|            [Voir mes compétences] [Mon CV]       |
-+--------------------------------------------------+
-|  Aperçu : 3 compétences clés  |  Dernier projet  |
-+--------------------------------------------------+
-|  Pied de page : GitHub | LinkedIn | CV PDF       |
-+--------------------------------------------------+
+## Section Compétences
+```
++---------------------------------------------------+
+|  Semestre : S1 ---●--- S2 ----- S3 ----- S4       |
+|                  (curseur)                        |
+|                                                   |
+|        (  HTML  )      ( SQL )                    |
+|     ( Travail      (     JavaScript    )          |
+|       d'équipe )          ( Git )                 |
+|                                                   |
+|  Taille de la bulle = niveau                      |
+|  Couleur = technique / humaine                    |
+|  Survol : nom + niveau | Clic : surligne les      |
+|  projets liés dans la frise                       |
++---------------------------------------------------+
+```
 
-## Page Compétences (visualisation principale)
-+--------------------------------------------------+
-| EN-TÊTE + MENU                                   |
-+--------------------------------------------------+
-|  MES COMPÉTENCES                                 |
-|  [Toutes] [Techniques] [Humaines]  <- filtres    |
-|  +----------------------+  +------------------+  |
-|  |                      |  | Détail de la     |  |
-|  |  GRAPHIQUE (radar    |  | compétence       |  |
-|  |  ou barres) niveaux  |  | cliquée +        |  |
-|  |                      |  | projets liés     |  |
-|  +----------------------+  +------------------+  |
-+--------------------------------------------------+
-| PIED DE PAGE                                     |
-+--------------------------------------------------+
+## Section Projets et parcours
+```
++---------------------------------------------------+
+|  <  2024 ------- 2025 ------- 2026  >             |
+|      |            |            |                  |
+|    [Bac]     [Projet 1]   [Projet 2]              |
+|              [Entrée IUT]  [Stage]                |
+|                                                   |
+|  Clic sur un élément : panneau de détail          |
+|  (description, technos, lien GitHub)              |
++---------------------------------------------------+
+```
 
-## Page Projets
-+--------------------------------------------------+
-| EN-TÊTE + MENU                                   |
-+--------------------------------------------------+
-|  MES PROJETS    Filtrer : [Technologie v]        |
-|  +----------+  +----------+  +----------+        |
-|  | Projet 1 |  | Projet 2 |  | Projet 3 |        |
-|  | image    |  | image    |  | image    |        |
-|  | technos  |  | technos  |  | technos  |        |
-|  +----------+  +----------+  +----------+        |
-+--------------------------------------------------+
-
-## Page Parcours
-+--------------------------------------------------+
-| EN-TÊTE + MENU                                   |
-+--------------------------------------------------+
-|  MON PARCOURS (frise chronologique)              |
-|  2023 ---- 2024 ---- 2025 ---- 2026              |
-|  Bac      IUT       Stage     ...                |
-|  (clic sur une date = détail)                    |
-+--------------------------------------------------+
-
-## Page Contact
-+--------------------------------------------------+
-| EN-TÊTE + MENU                                   |
-+--------------------------------------------------+
-|  Nom [______]  Email [______]                    |
-|  Message [________________]   [Envoyer]          |
-+--------------------------------------------------+
+## Section Contact
+```
++---------------------------------------------------+
+|  Une ligne : email | GitHub | LinkedIn            |
++---------------------------------------------------+
+```
 
 ## Interactions prévues
-- Filtres sur la page Compétences (catégories)
-- Clic sur une compétence : affichage du détail
-- Filtre par technologie sur la page Projets
-- Clic sur une étape de la frise : détail
+- Menu latéral : clic = défilement vers la section
+- Curseur de semestre : les bulles grossissent selon ma progression
+- Survol d'une bulle : info-bulle avec le niveau
+- Clic sur une bulle : surbrillance des projets liés (vues liées)
+- Clic sur un élément de la frise : panneau de détail
 
 ## Évolutions de la maquette
-*(Noter ici les changements et leurs raisons.)*
+- v1 : première version
