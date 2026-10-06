@@ -5,13 +5,12 @@ Début du projet → Choix du contenu → Maquette terminée → Première versi
 du site → Visualisations intégrées → Tests et corrections → Version finale
 
 ## Suivi des tâches
-
 | Tâche | Prévu | État | Commentaire |
 |-------|-------|------|-------------|
 | Création du dépôt GitHub + README | S41 (6/10) | Terminé | |
 | Planning prévisionnel | S41 (6/10) | Terminé | |
 | Choix du contenu (compétences, projets, parcours) | S41–S42 | En cours | |
-| Maquette v1 | S41–S42 | En cours | |
+| Maquette v1 | S41–S42 | Terminé | Refaite le 6/10 pour une organisation plus originale |
 | Architecture générale du site | S43 (23/10) | À faire | Vue en TD2 |
 | Structure HTML/CSS des pages | S43–S47 | À faire | |
 | Partie serveur (BDD + contrôleur) | S48 (23/11) | À faire | Vue en TD3 |
@@ -21,10 +20,12 @@ du site → Visualisations intégrées → Tests et corrections → Version fina
 | Documentation finale | Semestre 6 | À faire | |
 | Préparation de la présentation orale | Semestre 6 | À faire | |
 
+
 ## Dépendances
 - La maquette doit être terminée avant de développer les pages.
 - La base de données doit exister avant de développer les visualisations.
 - Les tests se font après l'ajout des interactions.
 
 ## Modifications du planning
-*(Noter ici les retards et changements, avec la date et la raison.)*
+- 6/10 : la maquette a été refaite (site une page, bulles de compétences,
+  frise) pour mieux correspondre à mon projet. Terminée en avance.
