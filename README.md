@@ -20,7 +20,7 @@ Origine : informations personnelles saisies par moi-même.
 - Page de contact
 
 ## Technologies
-À compléter au cours du projet (HTML, CSS, JavaScript...).
+À compléter au cours du projet (HTML, CSS, JavaScript , python).
 
 ## Lancer le projet
 À compléter lorsque le site sera développé.
