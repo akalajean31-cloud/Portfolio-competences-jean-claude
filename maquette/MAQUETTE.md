@@ -1,4 +1,7 @@
 # Maquette du site – version 1
+## Fichiers de la maquette
+- [Vue d'ensemble](<Vue d'ensemble.drawio.pdf>)
+- [Compétences et projets](maquette_competences_projets.pdf)
 
 ## Choix d'organisation
 Site sur une seule page qui défile, avec un menu latéral fixe.
