@@ -9,6 +9,10 @@ projet réalisé dans le cadre de l'IUT.
 Mettre en valeur mes compétences, mes projets et mon parcours de façon
 claire et visuelle, pour donner envie de me recruter ou de m'accepter
 en formation.
+Ce site est lui-même un outil décisionnel : il structure mes données
+(base de données) et les restitue sous forme de visualisations
+interactives pour aider un recruteur ou un jury à évaluer mon profil.
+Il illustre ainsi la compétence C4 de mon parcours VCOD.
 
 ### Public visé
 - **Recruteurs** (stage, alternance, emploi) : veulent voir rapidement
