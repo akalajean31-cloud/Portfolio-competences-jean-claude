@@ -1,26 +1,69 @@
-# Portfolio-competences-jean-claude
-Site web présentant mes compétences – projet IUT
-## Sujet et objectif
-Ce projet consiste à créer un site web qui présente mes compétences
-(acquises à l'IUT ou en dehors) à destination de futurs employeurs
-ou de formations.
+# Portfolio de compétences – Jean-Claude
 
-## Données utilisées
-- Mes compétences techniques et humaines
-- Mes projets réalisés (IUT et personnels)
-- Mon parcours (formations, expériences, stages)
+Site web présentant mes compétences (acquises à l'IUT ou en dehors),
+projet réalisé dans le cadre de l'IUT.
 
-Origine : informations personnelles saisies par moi-même.
+## 1. Analyse des besoins
 
-## Fonctionnalités prévues
-- Page d'accueil avec une présentation personnelle
-- Visualisation de mes compétences sous forme de graphique
-- Liste de mes projets, filtrable par technologie
-- Frise chronologique de mon parcours
-- Page de contact
+### Objectif
+Mettre en valeur mes compétences, mes projets et mon parcours de façon
+claire et visuelle, pour donner envie de me recruter ou de m'accepter
+en formation.
+
+### Public visé
+- **Recruteurs** (stage, alternance, emploi) : veulent voir rapidement
+  mes compétences, mon niveau et des projets concrets.
+- **Écoles d'ingénieurs** (jury d'admission) : veulent comprendre mon
+  parcours, ma progression et ma motivation.
+
+### Besoins identifiés
+- Voir mes compétences et mon niveau en un coup d'œil.
+- Constater ma progression au fil des semestres.
+- Accéder au détail de mes projets (technologies, lien GitHub).
+- Télécharger mon CV et me contacter facilement.
+- Pour moi : pouvoir mettre à jour le contenu sans modifier le code.
+
+## 2. Fonctionnalités
+
+### Navigation
+- Site sur une seule page avec un menu latéral fixe.
+- Clic dans le menu : défilement jusqu'à la section choisie.
+- Le menu indique la section en cours de lecture.
+
+### Visualisation
+- Compétences affichées en bulles (taille = niveau).
+- Curseur par semestre pour voir ma progression.
+- Clic sur une bulle : mise en évidence des projets liés.
+- Frise chronologique des projets et du parcours, avec panneau de détail.
+
+### Connexion (espace administrateur)
+- Page de connexion réservée à l'administrateur (moi).
+- Une fois connecté : ajouter, modifier ou supprimer des compétences,
+  des projets et des étapes du parcours.
+- Les données sont enregistrées dans une base de données.
+- Déconnexion et retour au site.
+
+## 3. Organisation du contenu
+
+### Arborescence du site
+```
+index
+├── index#presentation   → nom, présentation, CV
+├── index#competences    → bulles de compétences (données de la BDD)
+├── index#projets        → frise projets et parcours (données de la BDD)
+├── index#contact        → email, GitHub, LinkedIn
+└── connexion            → formulaire de connexion
+    └── administration   → gestion des données (BDD)
+        └── déconnexion  → retour à index
+```
+
+### Données utilisées
+Informations personnelles saisies par moi-même et stockées dans une base
+de données : compétences (nom, catégorie, niveau par semestre), projets
+(titre, description, technologies, date, lien) et parcours (dates, étapes).
 
 ## Technologies
-À compléter au cours du projet (HTML, CSS, JavaScript , python).
+À compléter au cours du projet (HTML, CSS, JavaScript, base de données…).
 
 ## Lancer le projet
 À compléter lorsque le site sera développé.
