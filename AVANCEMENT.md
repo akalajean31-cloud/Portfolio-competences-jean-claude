@@ -29,3 +29,5 @@
 - Partie serveur (BDD + contrôleur)
 - Visualisation des compétences
 - Interactions (curseur, filtres, frise)
+## Semaine 43
+Schéma relationnel adapté à partir de l’exemple fourni : ajout des tables PROJET, NIVEAU_SEMESTRE, TECHNOLOGIE, PARCOURS et ADMIN pour correspondre aux fonctionnalités du site. 
