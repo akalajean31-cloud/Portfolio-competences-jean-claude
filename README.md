@@ -77,6 +77,22 @@ de données : compétences (nom, catégorie, niveau par semestre), projets
 - `PLANNING.md` : planning prévisionnel et suivi
 - `AVANCEMENT.md` : journal de bord semaine par semaine
 - `maquette/` : maquettes du site
+## 4. Préparation des ressources
+
+### Contenus rassemblés
+- Textes : présentation, descriptions des projets et des étapes du parcours
+- Images : photo de profil, captures d'écran des projets (format compressé)
+- Documents : CV en PDF
+- Données : compétences du BUT SD VCOD, niveaux par semestre, projets,
+  technologies, parcours, préparés dans un tableur puis exportés en CSV
+
+### Organisation
+Toutes les ressources sont rangées dans le dossier `ressources/`.
+Les fichiers sont nommés sans accents ni espaces.
+
+### Qualité des données
+Les données sont vérifiées dans le tableur avant insertion dans la base
+(valeurs manquantes, cohérence des dates et des niveaux).
 
 ## Difficultés et limitations connues
 À compléter au fil du projet.
