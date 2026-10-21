@@ -47,7 +47,7 @@ erDiagram
     int id_projet PK
     varchar titre
     text description
-    enum type "IUT, personnel, stage"
+    enum type "SAE, personnel, stage"
     int semestre
     date date_debut
     date date_fin
