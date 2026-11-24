@@ -32,3 +32,41 @@
 ## Semaine 43
 Schéma relationnel adapté à partir de l’exemple fourni : ajout des tables PROJET, NIVEAU_SEMESTRE, TECHNOLOGIE, PARCOURS et ADMIN pour correspondre aux fonctionnalités du site. 
 arborescence, schéma relationnel personnalisé, adaptation au BUT SD VCOD.
+## Semaine 48 (23–24/11) – TD3 : serveur et base de données
+
+### Réalisé
+- Serveur Node.js/Express connecté à PostgreSQL (Laragon)
+
+  ![Serveur lancé](td3/preuves/serveur_lance.png)
+
+- Script init_db.sql : tables, données, ajout de C5 et d'une image
+  preuve par compétence
+
+  ![Script SQL](td3/preuves/init_db_sql.png)
+
+- Routes API : /api/heures, /api/competences, /api/competence/:id
+
+  ![Route /api/heures](td3/preuves/api_heures.png)
+
+- Récupération des données avec fetch et affichage dans la console
+
+  ![Console](td3/preuves/console_datas.png)
+
+- Page web : tableau, graphique en barres et camembert (Chart.js)
+
+  ![Page avec graphiques](td3/preuves/page_graphiques.png)
+
+- Clic sur une compétence : description et image preuve affichées
+
+  ![Clic sur une compétence](td3/preuves/clic_competence.png)
+
+### Difficultés rencontrées
+- Virgule manquante dans le INSERT : erreur de syntaxe SQL
+- ON CONFLICT DO NOTHING ne met pas à jour les lignes déjà présentes
+- Compétence sans activité absente du graphique : corrigé avec LEFT JOIN
+- console.log n'affiche rien sur la page : il faut ouvrir la console (F12)
+  ou écrire dans le HTML
+
+### Prochaines étapes
+- Table PREUVE séparée, reliée aux apprentissages critiques
+- Adapter la visualisation à mon portfolio (bulles, curseur par semestre)
