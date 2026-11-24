@@ -9,7 +9,7 @@ flowchart LR
     PREUVE["PREUVE<br/>(id_preuve, image, texte, id_ac, id_etudiant)"]
   end
 
-  SERVEUR(["API SERVER<br/>Express / Node.js"])
+  SERVEUR(["API SERVER<br/>Express / server.js"])
 
   COMP -- SQL --> SERVEUR
   ACT -- SQL --> SERVEUR
@@ -22,7 +22,7 @@ flowchart LR
   SERVEUR --> R4["/api/preuves<br/>Toutes les preuves"]
   SERVEUR --> R5["/api/preuve/:id<br/>Une preuve"]
 
-  R1 & R2 & R3 & R4 & R5 -- "JSON (200 ou 404)" --> NAV["Navigateur<br/>index.html + Chart.js"]
+  R1 & R2 & R3 & R4 & R5 -- "JSON (200 ou 404)" --> NAV["Navigateur<br/>index.html"]
 
   classDef nouveau fill:#ffe8a3,stroke:#b38600
   class PREUVE,AC,R4,R5 nouveau
